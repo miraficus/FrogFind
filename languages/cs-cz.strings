@@ -13,7 +13,7 @@
 %{ Read %}
 "back_to_frogfind" = "Zpět na";
 "browsing_url" = "Adresa URL";
-"go" = "Jít!";
+"go" = "Přejít!";
 
 %{ Errors %}
 
