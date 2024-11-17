@@ -1,0 +1,21 @@
+"encoding" = "ISO-8859-1";
+"author" = "Mira";
+
+"frogfind_description" = "Vyhledávač pro staré počítače";
+"leap_to" = "Skočit na";
+"ribbbit_button" = "Vyhledat!";
+"footer_author" = "Vytvořil Action Retro na YouTube";
+"footer_about" = "Na co je toto dobré?";
+"footer_powered" = "Založeno na DuckDuckGo";
+
+"search_results" = "Výsledky hledání pro";
+
+%{ Read %}
+"back_to_frogfind" = "Zpět na";
+"browsing_url" = "Adresa URL";
+"go" = "Jít!";
+
+%{ Errors %}
+
+"error_fail_to_fetch" = "Výsledky se nepodařilo získat, omlouváme se :(";
+"error_not_webpage" = "Toto není webová stránka :(";
