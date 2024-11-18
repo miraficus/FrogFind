@@ -10,14 +10,13 @@ Love the frog. Be the frog.
 1. Install Docker and docker-compose
 1. Create directory, in that directory create `docker-compose.yaml` file with content
     ```
-    version: '3.7'
+    name: FrogFind
     services:
-
-    web:
-        image: ghcr.io/actionretro/frogfind:main
-        ports:
-        - 8080:8080
-        restart: unless-stopped
+        frogfind:
+            ports:
+                - 8080:8080
+            image: ghcr.io/actionretro/frogfind:main
+            restart: unless-stopped
     ```
 1. Run `docker-compose up -d` in directory where you created `docker-compose.yaml`
 1. After a minute (depends on your internet speed), you should be able to access FrogFind on port 8080
