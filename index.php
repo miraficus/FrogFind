@@ -104,7 +104,7 @@ function clean_str($str) {
     </center>
     <br><br><br>
     <small><center><?= tr('footer_author') ?> | <a href="about.php"><?= tr('footer_about') ?></a></center><br>
-    <small><center><a href="?lg=en-us">English</a> | <a href="?lg=ru-ru">Russian</a> | <a href="?lg=cs-cz">Czech</a></center></small>
+    <small><center><a href="?lg=en-us">English</a> | <a href="?lg=ru-ru">Russian</a> | <a href="?lg=cs-cz">Czech</a></center></small><br>
     <small><center><?= tr('footer_powered') ?></center></small>
 </form>
 </form>
