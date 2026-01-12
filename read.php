@@ -146,7 +146,7 @@ function clean_str($str) {
  <body>
     <p>
         <form action="/read.php" method="get">
-        <a href="/?lg=<?= $_GET['lg'] ?>"><?= tr('back_to_frogfind'); ?> <b><font color="#008000">Frog</font><font color="000000">Find!</font></a></b> | <?= tr('browsing_url'); ?>: <input type="text" size="38" name="a" value="<?php echo $article_url ?>">
+        <a href="/?lg=<?= $_GET['lg'] ?>"><?= tr('back_to_frogfind'); ?> <b><font color="#008000">Frog</font><font color="000000">Find!</font></b></a> | <?= tr('browsing_url'); ?>: <input type="text" size="38" name="a" value="<?php echo $article_url ?>">
         <input type="hidden" name="lg" value="<?= $_GET['lg']; ?>">
         <input type="submit" value="<?= tr('go'); ?>">
         </form>
