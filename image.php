@@ -1,7 +1,8 @@
 <?php
 
     $url = "";
-    
+    $loc = "US";
+
     //get the image url
     if (isset( $_GET['i'] ) ) {
         $url = $_GET[ 'i' ];
@@ -25,9 +26,7 @@
 ?>
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 2.0//EN">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
- 
- 
- <html>
+<html>
  <head>
      <title>FrogFind Image Viewer</title>
  </head>

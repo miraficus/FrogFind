@@ -24,18 +24,6 @@ $article_url = "";
 $article_html = "";
 $error_text = "";
 
-// List of Content-Types that we know we can (try to) parse. 
-// Anything else will get piped through directly, if possible.
-$compatible_content_types = [
-    "text/html",
-    "text/plain"
-];
-
-// The maximum allowed filesize for proxy download passthroughs. 
-// Any file larger than this will instead show an error message, with
-// a direct link to the file.
-$proxy_download_max_filesize = 8000000; // ~ 8Mb
-
 if( isset( $_GET['a'] ) ) {
     $article_url = $_GET["a"];
 } else {
@@ -82,7 +70,7 @@ else {
             if (!$filename) {
                 $filename = "download";
             }
-            
+
             // Set the content headers based on the file we're proxying through.
             header('Content-Type: ' . $contentType);
             header('Content-Length: ' . $filesize);
@@ -95,6 +83,8 @@ else {
         }
     }
 }
+
+$host = parse_url($article_url, PHP_URL_HOST);
 
 use fivefilters\Readability\Readability;
 use fivefilters\Readability\Configuration;
@@ -160,7 +150,7 @@ function clean_str($str) {
             //we can only do png and jpg
             if (strpos($image_url, ".jpg") || strpos($image_url, ".jpeg") || strpos($image_url, ".png") === true) {
                 $img_num++;
-                $imgline_html .= ' <a href="image.php?i=' . $image_url . '">[$img_num]</a> ';
+                $imgline_html .= " <a href='image.php?i=" . $image_url . "'>[$img_num]</a> ";
             }
         endforeach;
         if($img_num>0) {
